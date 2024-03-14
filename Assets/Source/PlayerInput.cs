@@ -32,6 +32,7 @@ public class PlayerInput : MonoBehaviour
         if (objectLayer == mapLayer.value && currentFlagHolder != null)
         {
             currentFlagHolder.Place(raycastHit2D.point);
+            currentFlagHolder = null;
         }
     }
 
